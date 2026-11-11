@@ -1,0 +1,47 @@
+{
+    "dataset_name": "HMEQ (Home Equity Loan Dataset)",
+    "random_state": 42,
+    "n_total": 5960,
+    "n_train": 4768,
+    "n_test": 1192,
+    "target_binary": {
+        "name": "BAD",
+        "train_rate": 0.19945469798657717,
+        "test_rate": 0.19966442953020133
+    },
+    "target_continuous": {
+        "name": "LOAN",
+        "train_mean": 18531.900167785236,
+        "test_mean": 18912.24832214765
+    },
+    "treatment": {
+        "name": "TREATMENT",
+        "description": "1 = DebtCon (Consolidación de Deuda), 0 = HomeImp (Mejoras Hogar)",
+        "train_rate": 0.6969379194630873,
+        "test_rate": 0.7189597315436241
+    },
+    "anova_design": {
+        "factor": "JOB",
+        "continuous_var": "LOAN",
+        "categories": [
+            "Mgr",
+            "Office",
+            "Other",
+            "ProfExe",
+            "Sales",
+            "Self"
+        ]
+    },
+    "medians_learned_train": {
+        "LOAN": 16200.0,
+        "MORTDUE": 65022.0,
+        "VALUE": 89250.0,
+        "YOJ": 7.0,
+        "DEROG": 0.0,
+        "DELINQ": 0.0,
+        "CLAGE": 173.49539211,
+        "NINQ": 1.0,
+        "CLNO": 20.0,
+        "DEBTINC": 34.802428777
+    }
+}
